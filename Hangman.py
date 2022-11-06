@@ -1,13 +1,10 @@
 #----Required imports----#
 import random
 
-#----Reading from file-----
-file= open(r"D:\\Python Dev\\Programs\\Hangman\WordList.txt",'r')
-my_list=file.read().split(",")
-
 #---Declarations----#
-count=0
-# my_list = ["Hello","Hi","Making","Moshi"]
+
+para = "able,about,account,acid,across,addition,adjustment,advertisement,after,again,against,agreement,almost,among,amount,amusement,angle,angry,animal,answer,apparatus,apple,approval,argument,attack,attempt,attention,attraction,authority,automatic,awake,baby,back,balance,ball,band,base,basin,basket,bath,beautiful,because,before,behaviour,belief,bell,bent,berry,between,bird,bite,bitter,black,blade,blood,blow,blue,board,boat,body,boiling,bone,book,boot,bottle,brain,brake,branch,brass,bread,breath,brick,bridge,bright,broken,brother,brown,brush,bucket,building,bulb,burn,burst,business,butter,button,cake,camera,canvas,card,care,carriage,cart,cause,certain,chain,chalk,chance"
+my_list = para.split(",")
 
 
 #----Function used to get a word from the list of words defined above----#
@@ -139,7 +136,7 @@ def hangman():
     global word_alphabets
     global used_letters
     global alphabets
-   
+    count =0
     used_letters=[]
     correct_letters=[]
     
