@@ -1,8 +1,8 @@
 divisor = int(input("Enter the divisor:"))
-divident = int(input("Enter the divident:"))
+dividend = int(input("Enter the divident:"))
 
 try:
-    print(divisor/divident)
+    print(dividend/divisor)
 except ZeroDivisionError as e:
     print(e)
 
